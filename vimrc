@@ -66,15 +66,18 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'rstacruz/sparkup', {'rtp':'vim/'}
 "Plugin 'ascenator/L9', {'rtp':'newL9'}
 
-Plugin 'altercation/solarized'
+"Plugin 'altercation/solarized'
 Plugin 'ervandew/supertab'
-Plugin 'kien/rainbow_parentheses.vim'
+"Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
+Plugin 'luochen1990/rainbow'
+Plugin 'vim-scripts/AutoClose'
+Plugin 'Solarized'
 
 call vundle#end() 
 filetype plugin indent on
@@ -84,3 +87,35 @@ filetype plugin indent on
 imap ff <esc>
 set nu
 set ci
+set fencs=utf-8,gbk,gb2312,cp396
+colo solarized
+
+
+
+
+"for nerdtree
+map NE :NERDTreeToggle<cr>
+autocmd bufenter * if(winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+
+"for rainbow
+let g:rainbow_active = 1
+
+"for solarized"
+let g:solarized_italic=0
+"
+function! ToggleBackground()
+	if (w:solarized_style=="dark")
+		let w:solarized_style="light"
+	colorscheme solarized
+else
+	let w:solarized_style="dark"
+	colorscheme solarized
+endif
+endfunction
+command! Togbg call ToggleBackground()
+nmap <F5> :call ToggleBackground()<CR>
+imap <F5> <ESC>:call ToggleBackground()<CR>a
+vnoremap <F5> <ESC>:call ToggleBackground()<CR>
+
+""""""""""""""""""""""""""""""""
