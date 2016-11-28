@@ -66,7 +66,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'rstacruz/sparkup', {'rtp':'vim/'}
 "Plugin 'ascenator/L9', {'rtp':'newL9'}
 
-"Plugin 'altercation/solarized'
+Plugin 'altercation/solarized'
 Plugin 'ervandew/supertab'
 "Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'scrooloose/nerdtree'
@@ -77,7 +77,16 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 Plugin 'luochen1990/rainbow'
 Plugin 'vim-scripts/AutoClose'
-Plugin 'Solarized'
+"for vim markdown
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+"for snipmate
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+"Plugin 'Solarized'
+"vim chat of Tux
+Plugin 'wsdjeg/vim-chat'
 
 call vundle#end() 
 filetype plugin indent on
@@ -85,10 +94,16 @@ filetype plugin indent on
 "set by ian
 
 imap ff <esc>
+imap fk <RIGHT>
 set nu
 set ci
-set fencs=utf-8,gbk,gb2312,cp396
-colo solarized
+set fencs=utf-8,gbk,gb2312,cp936
+"colo solarized
+set ts=4
+set softtabstop=4
+set shiftwidth=4
+"set ai
+
 
 
 
@@ -119,3 +134,12 @@ imap <F5> <ESC>:call ToggleBackground()<CR>a
 vnoremap <F5> <ESC>:call ToggleBackground()<CR>
 
 """"""""""""""""""""""""""""""""
+"for syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
