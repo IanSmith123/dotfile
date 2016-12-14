@@ -74,7 +74,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'luochen1990/rainbow'
 Plugin 'vim-scripts/AutoClose'
 "for vim markdown
@@ -98,7 +98,7 @@ imap fk <RIGHT>
 set nu
 set ci
 set fencs=utf-8,gbk,gb2312,cp936
-"colo solarized
+colo solarized
 set ts=4
 set softtabstop=4
 set shiftwidth=4
@@ -135,11 +135,16 @@ vnoremap <F5> <ESC>:call ToggleBackground()<CR>
 
 """"""""""""""""""""""""""""""""
 "for syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+""set statusline+=%#warningmsg#
+""set statusline+=%{SyntasticStatuslineFlag()}
+""set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+""let g:syntastic_always_populate_loc_list = 1
+""let g:syntastic_auto_loc_list = 1
+""let g:syntastic_check_on_open = 1
+""let g:syntastic_check_on_wq = 0
+
+
+"""""""""""""""""""""""""""""""""""
+"for air line when there is only one window, replace buffer
+set laststatus=2
