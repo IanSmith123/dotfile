@@ -147,4 +147,10 @@ vnoremap <F5> <ESC>:call ToggleBackground()<CR>
 
 """""""""""""""""""""""""""""""""""
 "for air line when there is only one window, replace buffer
-set laststatus=2
+""set laststatus=2
+
+
+"""""""""""""""""""""""""""""""""""""""""""""
+"for vim markdown
+let g:vim_markdown_folding_disabled = 1
+
