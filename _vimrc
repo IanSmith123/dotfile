@@ -87,7 +87,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") &&b:NERDTree.isTa
 " open nerd tree automatically when vim starts up
 " comment bellow because I add winManager
 map NE :NERDTreeToggle<CR>
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 
 """"""""""""""""""""""""""""""
 "for syntastic
@@ -97,7 +97,7 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 """"""""""""""""""""""""""""
