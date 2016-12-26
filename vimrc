@@ -66,7 +66,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'rstacruz/sparkup', {'rtp':'vim/'}
 "Plugin 'ascenator/L9', {'rtp':'newL9'}
 
-Plugin 'altercation/solarized'
+"Plugin 'altercation/solarized'
 Plugin 'ervandew/supertab'
 "Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'scrooloose/nerdtree'
@@ -84,9 +84,9 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
-"Plugin 'Solarized'
+Plugin 'Solarized'
 "vim chat of Tux
-Plugin 'wsdjeg/vim-chat'
+"Plugin 'wsdjeg/vim-chat'
 
 call vundle#end() 
 filetype plugin indent on
