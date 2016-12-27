@@ -94,7 +94,7 @@ filetype plugin indent on
 "set by ian
 
 imap ff <esc>
-imap fk <RIGHT>
+imap jk <RIGHT>
 set nu
 set ci
 set fencs=utf-8,gbk,gb2312,cp936
@@ -102,6 +102,7 @@ colo solarized
 set ts=4
 set softtabstop=4
 set shiftwidth=4
+set guifont=Ubuntu\ mono:h14
 "set ai
 
 
