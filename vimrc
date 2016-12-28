@@ -9,11 +9,21 @@
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages available in Debian.
 runtime! debian.vim
-
+""""""""""""""""""""
+"NOTE:sign of by: Ian"
+"Because the backspace can not work here, and guess it because of this 
+"script is for My linux mint, cinnamon 18, and the version is vim 7.4,
+"but in windows, version is vim8.0, compare with the vimrc in windowns,
+"I find this difference, and add it to here.
+if has('win32')
+	source $VIMRUNTIME/vimrc_example.vim
+	source $VIMRUNTIME/mswin.vim
+	behave mswin
+endif
 " Uncomment the next line to make Vim more Vi-compatible
 " NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
 " options, so any other options should be set AFTER setting 'compatible'.
-"set compatible
+set nocompatible
 
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
@@ -156,6 +166,6 @@ vnoremap <F5> <ESC>:call ToggleBackground()<CR>
 let g:vim_markdown_folding_disabled = 1
 
 "for markdown preview plus"
-let g:table_mode_corner="|"
-nmap <Leader>ch :update<Bar>silent ! start %:p<CR>
+"let g:table_mode_corner="|"
+""nmap <Leader>ch :update<Bar>silent ! start %:p<CR>
 
