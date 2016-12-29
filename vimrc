@@ -168,4 +168,11 @@ let g:vim_markdown_folding_disabled = 1
 "for markdown preview plus"
 "let g:table_mode_corner="|"
 ""nmap <Leader>ch :update<Bar>silent ! start %:p<CR>
+"
+""""""""""""""""""""""""""""""""""""
+"for Airline-theme"
+let g:airline_theme='bubblegum'
 
+""""""""""""""""""""""""""
+"for vim airline"
+"let g:airline#extensions#tabline#enabled = 1
