@@ -103,7 +103,7 @@ filetype plugin indent on
 
 "set by ian
 
-imap ff <esc>
+imap aa <esc>
 imap jk <RIGHT>
 set nu
 set ci
