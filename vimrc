@@ -176,3 +176,14 @@ let g:airline_theme='bubblegum'
 """"""""""""""""""""""""""
 "for vim airline"
 "let g:airline#extensions#tabline#enabled = 1
+
+
+
+""""""""""""""""""""""""""""""""""""""
+" for taglist.vim"
+let Tlist_Inc_Winwidth=0
+let Tlis_File_Fold_Auto_Close=1
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1
+map TG :TlistToggle<CR>
+
