@@ -97,6 +97,7 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'Solarized'
 "vim chat of Tux
 "Plugin 'wsdjeg/vim-chat'
+Plugin 'Taglist.vim'
 
 call vundle#end() 
 filetype plugin indent on
