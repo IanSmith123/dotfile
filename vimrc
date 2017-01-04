@@ -186,5 +186,6 @@ let Tlist_Inc_Winwidth=0
 let Tlis_File_Fold_Auto_Close=1
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
+let Tlist_GainFocus_On_ToggleOpen=1
 map TG :TlistToggle<CR>
 
