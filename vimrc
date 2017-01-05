@@ -115,8 +115,12 @@ set ts=4
 set softtabstop=4
 set shiftwidth=4
 set guifont=Ubuntu\ mono:h14
+set autoread
+set nobackup
+"use \n not \r\n
+set fileformat=unix
+"set cursorline
 "set ai
-
 
 
 
