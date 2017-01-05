@@ -98,6 +98,7 @@ Plugin 'Solarized'
 "vim chat of Tux
 "Plugin 'wsdjeg/vim-chat'
 Plugin 'Taglist.vim'
+Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end() 
 filetype plugin indent on
