@@ -7,9 +7,9 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
 #ZSH_THEME="random"
-#ZSH_THEME="muse"
+ZSH_THEME="muse"
 #ZSH_THEME="sonicradish"
 #ZSH_THEME="gozilla"
 #ZSH_THEME="awesomepand"
@@ -57,7 +57,8 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git chucknorris)
+#plugins=(git chucknorris)
+plugins=(chucknorris)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,7 +94,41 @@ source $ZSH/oh-my-zsh.sh
 #
 #Write by Ian in 2016.12.29
 alias cls='clear'
+alias ten='ssh iansmith@123.207.7.233'
 #alias -s py=vim
 alias -s md=vim
-
 chuck_cow
+
+###############################################################
+#######################################################33
+##########################for autojump
+# the login $SHELL isn't always the one used
+# NOTE: problems might occur if /bin/sh is symlinked to /bin/bash
+if [ -n "${BASH}" ]; then
+    shell="bash"
+elif [ -n "${ZSH_NAME}" ]; then
+    shell="zsh"
+elif [ -n "${__fish_datadir}" ]; then
+    shell="fish"
+elif [ -n "${version}" ]; then
+    shell="tcsh"
+else
+    shell=$(echo ${SHELL} | awk -F/ '{ print $NF }')
+fi
+
+# prevent circular loop for sh shells
+if [ "${shell}" = "sh" ]; then
+    return 0
+
+# check local install
+elif [ -s ~/.autojump/share/autojump/autojump.${shell} ]; then
+    source ~/.autojump/share/autojump/autojump.${shell}
+
+# check global install
+elif [ -s /usr/local/share/autojump/autojump.${shell} ]; then
+    source /usr/local/share/autojump/autojump.${shell}
+
+# check Debian install
+elif [ -s /usr/share/autojump/autojump.${shell} ]; then
+    source /usr/share/autojump/autojump.${shell}
+fi
