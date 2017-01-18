@@ -119,8 +119,10 @@ set autoread
 set nobackup
 "use \n not \r\n
 set fileformat=unix
-"set cursorline
+set cursorline
 "set ai
+"start roll the screen when it's 7th line"
+set so=7
 
 
 
@@ -194,3 +196,10 @@ let Tlist_Exit_OnlyWindow=1
 let Tlist_GainFocus_On_ToggleOpen=1
 map TG :TlistToggle<CR>
 
+"""""""""""for win gui"
+if has("gui_running")
+	set guioptions-=T
+	set guioptions-=m
+	set guioptions-=L
+	set guioptions-=r
+endif
