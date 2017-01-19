@@ -94,7 +94,8 @@ source $ZSH/oh-my-zsh.sh
 #
 #Write by Ian in 2016.12.29
 alias cls='clear'
-alias pc='proxychains4'
+alias ten='ssh iansmith@123.207.7.233 -p 3389'
+alias pc='proxychains4 -q'
 #alias -s py=vim
 alias -s md=vim
 chuck_cow
