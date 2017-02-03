@@ -97,7 +97,7 @@ alias cls='clear'
 alias pc='proxychains4 -q'
 #alias -s py=vim
 alias -s md=vim
-chuck_cow
+
 
 ###############################################################
 #######################################################33
@@ -132,3 +132,7 @@ elif [ -s /usr/local/share/autojump/autojump.${shell} ]; then
 elif [ -s /usr/share/autojump/autojump.${shell} ]; then
     source /usr/share/autojump/autojump.${shell}
 fi
+
+#########################################################3
+#figlet
+figlet    M r , I a n . 
