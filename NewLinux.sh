@@ -6,6 +6,7 @@ git clone --depth=1 https://github.com/lijiejie/subDomainsBrute.git
 git clone --depth=1 https://github.com/IanSmith123/vimrc-of-ian.git
 git clone --depth=1 https://github.com/powerline/fonts.git
 wget https://nmap.org/dist/nmap-7.40.tar.bz2
+wget https://downloads.metasploit.com/data/releases/metasploit-latest-linux-x64-installer.run
 sudo apt install python-pip -y
 
 sudo apt install figlet -y
