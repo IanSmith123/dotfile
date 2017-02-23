@@ -166,7 +166,7 @@ vnoremap <F5> <ESC>:call ToggleBackground()<CR>
 
 """""""""""""""""""""""""""""""""""
 "for air line when there is only one window, replace buffer
-""set laststatus=2
+set laststatus=2
 
 
 """""""""""""""""""""""""""""""""""""""""""""
@@ -199,7 +199,7 @@ map TG :TlistToggle<CR>
 """""""""""for win gui"
 if has("gui_running")
 	set guioptions-=T
-	set guioptions-=m
-	set guioptions-=L
-	set guioptions-=r
+	"set guioptions-=m
+	"set guioptions-=L
+	"set guioptions-=r
 endif
