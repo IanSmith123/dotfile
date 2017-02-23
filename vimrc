@@ -77,7 +77,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'ascenator/L9', {'rtp':'newL9'}
 
 "Plugin 'altercation/solarized'
-Plugin 'ervandew/supertab'
+"Plugin 'ervandew/supertab'
 "Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
@@ -203,3 +203,8 @@ if has("gui_running")
 	"set guioptions-=L
 	"set guioptions-=r
 endif
+
+""""""""""""""""""""""""
+"for python complete"
+""filetype on
+""autocmd FileType python set omnifunc=pythoncomplete#Complete
