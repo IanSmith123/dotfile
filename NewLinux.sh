@@ -27,7 +27,8 @@ cd
 sudo apt install python-pip -y
 sudo apt install figlet sl tree python3-pip -y
 sudo apt install libssl-dev zsh autojump exuberant-ctags sublime-text -y
-sudo apt install shutter netease-cloud-music okular 
+sudo apt install shutter netease-cloud-music okular filezilla
+
 
 wget https://nmap.org/dist/nmap-7.40.tar.bz2
 tar -xvf nmap-7.40.tar.bz2
