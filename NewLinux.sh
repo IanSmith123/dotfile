@@ -24,7 +24,7 @@ cd
 
 
 
-sudo apt install python-pip -y
+sudo apt install python-pip zsh -y
 sudo apt install figlet sl tree python3-pip -y
 sudo apt install libssl-dev zsh autojump exuberant-ctags sublime-text -y
 
@@ -41,7 +41,7 @@ mkdir ~/.pip
 echo "[global]">~/.pip/pip.conf
 echo "index-url = https://pypi.douban.com/simple/">> ~/.pip/pip.conf
 sudo pip install --upgrade pip setuptools
-sudo pip install requests shadowsocks ipython xlrd flask
+sudo pip install requests shadowsocks ipython xlrd flask uwsgi virtulenv
 
 
 
