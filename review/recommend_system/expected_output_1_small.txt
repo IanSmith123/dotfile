@@ -1,0 +1,26 @@
+Welcome to the CSC110 Book Recommender. Type the word in the
+left column to do the action on the right.
+recommend : recommend books for a particular user
+best      : the book with the highest rating among all users
+add       : add a new book
+quit      : exit the program
+next task? best
+The highest rated book is: 
+Cats
+with an overall score of 5.0
+next task? recommend
+user? Carlos
+Title: Watership Down by Richard Adams, rating = 5
+next task? recommend
+user? Kalid
+next task? recommend
+user? Suelyn
+Title: Watership Down by Richard Adams, rating = 5
+next task? recommend
+user? Bob
+Title: 1984 by George Orwell, rating = 5
+next task? best
+The highest rated book is: 
+Cats
+with an overall score of 5.0
+next task? quit

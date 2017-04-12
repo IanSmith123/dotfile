@@ -1,0 +1,52 @@
+Welcome to the CSC110 Book Recommender. Type the word in the
+left column to do the action on the right.
+recommend : recommend books for a particular user
+best      : the book with the highest rating among all users
+add       : add a new book
+quit      : exit the program
+next task? best
+The highest rated book is: 
+Sabriel
+with an overall score of 4.0
+next task? recommend
+user? Nathan
+next task? recommend
+user? James
+Title: Maus: A Survivor's Tale by Art Spiegelman, rating = 5
+next task? recommend
+user? Tiffany
+Title: The Bourne Series by Robert Ludlum, rating = 3
+next task? recommend
+user? Megan
+Title: Bone Series by Jeff Smith, rating = 5
+Title: The Princess Diaries by Meg Cabot, rating = 5
+Title: My Sister's Keeper by Jodi Picoult, rating = 5
+next task? recommend
+user? Ella
+Title: The Da Vinci Code by Dan Brown, rating = 5
+Title: Bone Series by Jeff Smith, rating = 5
+Title: The Lord of the Rings by J R R Tolkien, rating = 5
+Title: The Hobbit by J R R Tolkien, rating = 5
+Title: My Sister's Keeper by Jodi Picoult, rating = 5
+Title: The War Of The Worlds by H G Wells, rating = 5
+Title: Naruto by Masashi Kishimoto, rating = 5
+Title: Harry Potter Series by J.K. Rowling, rating = 5
+Title: The Bourne Series by Robert Ludlum, rating = 5
+Title: The Hitchhiker's Guide To The Galaxy by Douglas Adams, rating = 3
+next task? recommend
+user? Leslie
+Title: Twilight Series by Stephenie Meyer, rating = 5
+Title: The Princess Diaries by Meg Cabot, rating = 3
+Title: My Sister's Keeper by Jodi Picoult, rating = 5
+Title: Ender's Game by Orson Scott Card, rating = 3
+Title: The Lion the Witch and the Wardrobe by C S Lewis, rating = 5
+Title: Inkheart by Cornelia Funke, rating = 5
+Title: The Princess Bride by William Goldman, rating = 5
+Title: Hatchet by Gary Paulsen, rating = 5
+Title: Naruto by Masashi Kishimoto, rating = 5
+Title: The Golden Compass by Philip Pullman, rating = 5
+next task? recommend
+user? Shannon
+Title: Ender's Game by Orson Scott Card, rating = 3
+Title: Hatchet by Gary Paulsen, rating = 5
+next task? quit
