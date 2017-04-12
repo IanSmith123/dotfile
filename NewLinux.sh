@@ -25,7 +25,7 @@ cd
 
 
 sudo apt install python-pip zsh -y
-sudo apt install figlet sl tree python3-pip -y
+sudo apt install figlet sl tree python3-pip hydra -y
 sudo apt install libssl-dev zsh autojump exuberant-ctags sublime-text -y
 sudo apt install shutter netease-cloud-music okular filezilla
 
