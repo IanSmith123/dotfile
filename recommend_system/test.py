@@ -1,4 +1,4 @@
-
+import copy
 
 dic = [
     {
@@ -8,10 +8,8 @@ dic = [
         ],
     },
 ]
+dic2 = {'book_name': 'aa', 'book_rating': 233, 'book_author': 'fven'}
 print(dic[0]['les1ie'][0])
-dic[0]['les1ie'][0]['book_name'] = 'test'
-print dic[0]['les1ie'][0]['book_name']
-
-t = 1
-t+=2
-print t
+# dic[0]['les1ie'][0]['book_name'] = 'test'
+dic[0]['les1ie'].append(dic2)
+print dic
