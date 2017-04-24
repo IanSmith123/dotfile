@@ -50,7 +50,7 @@ ZSH_THEME="amuse"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git chucknorris)
-plugins=(chucknorris autojump)
+plugins=(autojump)
 source $ZSH/oh-my-zsh.sh
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -78,7 +78,6 @@ source $ZSH/oh-my-zsh.sh
 #
 #Write by Ian in 2016.12.29
 alias cls='clear'
-alias ten='ssh ubuntu@123.207.7.233 -p 22'
 alias pc='proxychains4 -q'
 figlet    M r , I a n . 
 #. /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
