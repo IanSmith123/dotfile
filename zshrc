@@ -8,12 +8,12 @@
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="random"
 #ZSH_THEME="muse"
-ZSH_THEME="amuse"
+#ZSH_THEME="amuse"
 #ZSH_THEME="sonicradish"
 #ZSH_THEME="gozilla"
 #ZSH_THEME="awesomepand"
 #ZSH_THEME="sonicradish"
-#ZSH_THEME="iagnoster"
+ZSH_THEME="agnoster"
 #
 #
 #
@@ -80,4 +80,3 @@ source $ZSH/oh-my-zsh.sh
 alias cls='clear'
 alias pc='proxychains4 -q'
 figlet    M r , I a n . 
-#. /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh

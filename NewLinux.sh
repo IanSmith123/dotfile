@@ -1,13 +1,13 @@
 #!/bin/bash
 
 
+
+# for base github file
 mkdir ~/forgit
 cd ~/forgit
 git clone --depth=1 https://github.com/IanSmith123/vimrc-of-ian.git
 git clone https://github.com/IanSmith123/iansmith123.github.io.git
 git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-
 git clone --depth=1 https://github.com/rofl0r/proxychains-ng.git
 cd proxychains-ng
 ./configure --prefix=/usr --sysconfdir=/etc
@@ -17,16 +17,18 @@ sudo make install-config
 echo "socks5 127.0.0.1 1080 " >>/etc/proxychains.conf
 cd ..
 
+
+# for cyber security
 git clone --depth=1 https://github.com/sqlmapproject/sqlmap.git
 git clone --depth=1 https://github.com/lijiejie/subDomainsBrute.git
-
 cd 
 
 
 
-sudo apt install python-pip zsh -y
-sudo apt install figlet sl tree python3-pip hydra -y
-sudo apt install libssl-dev zsh autojump exuberant-ctags sublime-text -y
+# base 
+sudo apt install python-pip python3-pip zsh figlet exuberant-ctags autojump sl tree -y
+
+# for desktop
 sudo apt install shutter netease-cloud-music okular filezilla
 
 
@@ -42,8 +44,10 @@ cd ..
 mkdir ~/.pip
 echo "[global]">~/.pip/pip.conf
 echo "index-url = https://pypi.douban.com/simple/">> ~/.pip/pip.conf
-sudo pip install --upgrade pip setuptools
+sudo pip install -U pip setuptools
 sudo pip install requests shadowsocks ipython xlrd flask uwsgi virtulenv
+sudo pip3 install -U pip setuptools
+sudo pip3 install requests shadowsocks ipython xlrd flask uwsgi virtulenv
 
 
 
@@ -53,4 +57,5 @@ sudo pip install requests shadowsocks ipython xlrd flask uwsgi virtulenv
 #get https://downloads.metasploit.com/data/releases/metasploit-latest-linux-x64-installer.run
 
 
+# for oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"                                                  
