@@ -1,2 +1,2 @@
-# vimrc-of-ian
-backup of my vimrc
+# Lesi1e-conf
+Backup of Les1ie's configure.
