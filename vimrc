@@ -71,13 +71,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 "Plugin 'tpope/vim-fugitive'
-"Plugin 'L9'
+Plugin 'L9'
 "Plugin 'git://git.wincent.com/command-t.git'
 "Plugin 'rstacruz/sparkup', {'rtp':'vim/'}
 "Plugin 'ascenator/L9', {'rtp':'newL9'}
 
 "Plugin 'altercation/solarized'
-"Plugin 'ervandew/supertab'
+Plugin 'ervandew/supertab'
 "Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
@@ -99,6 +99,7 @@ Plugin 'Solarized'
 "Plugin 'wsdjeg/vim-chat'
 Plugin 'Taglist.vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'shanzi/autoHEADER'
 
 call vundle#end() 
 filetype plugin indent on
@@ -204,7 +205,8 @@ if has("gui_running")
 	"set guioptions-=r
 endif
 
-""""""""""""""""""""""""
-"for python complete"
-""filetype on
-""autocmd FileType python set omnifunc=pythoncomplete#Complete
+
+
+" for auto header"
+let g:autoHEADER_default_author="Les1ie"
+let g:autoHEADER_auto_enable=1
