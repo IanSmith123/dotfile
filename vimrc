@@ -76,7 +76,7 @@ Plugin 'L9'
 "Plugin 'rstacruz/sparkup', {'rtp':'vim/'}
 "Plugin 'ascenator/L9', {'rtp':'newL9'}
 
-"Plugin 'altercation/solarized'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'ervandew/supertab'
 "Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'scrooloose/nerdtree'
@@ -99,7 +99,7 @@ Plugin 'Solarized'
 "Plugin 'wsdjeg/vim-chat'
 Plugin 'Taglist.vim'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'shanzi/autoHEADER'
+Plugin 'IanSmith123/autoHEADER'
 
 call vundle#end() 
 filetype plugin indent on
@@ -210,3 +210,4 @@ endif
 " for auto header"
 let g:autoHEADER_default_author="Les1ie"
 let g:autoHEADER_auto_enable=1
+let g:autoHEADER_fill_char_repeat=70
