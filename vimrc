@@ -76,7 +76,7 @@ Plugin 'L9'
 "Plugin 'rstacruz/sparkup', {'rtp':'vim/'}
 "Plugin 'ascenator/L9', {'rtp':'newL9'}
 
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 Plugin 'ervandew/supertab'
 "Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'scrooloose/nerdtree'
@@ -94,7 +94,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
-Plugin 'Solarized'
+"Plugin 'Solarized'
 "vim chat of Tux
 "Plugin 'wsdjeg/vim-chat'
 Plugin 'Taglist.vim'
