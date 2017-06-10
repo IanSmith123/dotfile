@@ -12,9 +12,9 @@ mkdir ~/.pip
 echo "[global]">~/.pip/pip.conf
 echo "index-url = https://pypi.douban.com/simple/">> ~/.pip/pip.conf
 sudo pip install -U pip setuptools
-sudo pip install requests shadowsocks ipython xlrd flask virtulenv
+sudo pip install requests ipython flask
 sudo pip3 install -U pip setuptools
-sudo pip3 install requests shadowsocks ipython xlrd flask virtulenv
+sudo pip3 install requests shadowsocks ipython xlrd flask virtulenv glances you-get speedtest-cli
 
 # for desktop
 sudo apt install shutter netease-cloud-music okular filezilla -y
