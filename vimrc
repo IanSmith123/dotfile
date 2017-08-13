@@ -100,6 +100,11 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'Taglist.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'IanSmith123/autoHEADER'
+Plugin 'johngrib/vim-game-code-break'
+"vim golang"
+Plugin 'fatih/vim-go'
+"vim git"
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end() 
 filetype plugin indent on
