@@ -95,6 +95,7 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 "Plugin 'Solarized'
+Plugin 'altercation/vim-colors-solarized'
 "vim chat of Tux
 "Plugin 'wsdjeg/vim-chat'
 Plugin 'Taglist.vim'
@@ -102,7 +103,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'IanSmith123/autoHEADER'
 Plugin 'johngrib/vim-game-code-break'
 "vim golang"
-Plugin 'fatih/vim-go'
+"Plugin 'fatih/vim-go'
 "vim git"
 Plugin 'tpope/vim-fugitive'
 
