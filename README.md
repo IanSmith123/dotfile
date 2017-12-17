@@ -12,7 +12,7 @@ Les1ie's dotfiles
 
 ## configure for `Vundle.vim`
 1. install vim
-2. 
+2. ​
 ```
 $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
@@ -24,13 +24,13 @@ $ cp vimrc ~/.vimrc
 5. functions
 - `autoheader` auto add comment header about author when user create new file like `.py .cpp .c and etc`
 - `Taglist`
-- `NeardTree` 
+- `NerdTree` 
 - solarized color scheme
 - `vim airline`
 - auto close bracket and rainbow color bracket
 - `markdown` highlight support
 - alias `aa` as `esc`, `jk` as `<RIGHT>`
-- auto check the encoding 
+- auto check file encoding 
 
 ## configure for  `oh-my-zsh`
 1. install zsh, figlet(show banner)
@@ -39,7 +39,7 @@ $ cp vimrc ~/.vimrc
 $ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 3. edit the 5th lines of `zshrc` to the value of `$USER`
-4. 
+4. ​
 ```
 $ cp zshrc ~/.zshrc
 ```
@@ -52,7 +52,7 @@ $ cp zshrc ~/.zshrc
 
 ## configure for  `tmux`
 1. install tmux
-2. 
+2. ​
 ```
 $ cp tmux.conf ~/.tmux.conf
 ```
