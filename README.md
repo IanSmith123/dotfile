@@ -10,13 +10,13 @@ Les1ie's dotfiles
 - [ ] `NewLinux.sh` for new installed linux server(drop out)
 
 
-## configure for `Vundle.vim`
+## config for `Vundle.vim`
 1. install vim
 2. ​
 ```
 $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
-3. install configure file
+3. configure 
 ```
 $ cp vimrc ~/.vimrc
 ```
@@ -32,14 +32,14 @@ $ cp vimrc ~/.vimrc
 - alias `aa` as `esc`, `jk` as `<RIGHT>`
 - auto check file encoding 
 
-## configure for  `oh-my-zsh`
+## config for  `oh-my-zsh`
 1. install zsh, figlet(show banner)
 2. install `oh-my-zsh` script
 ```
 $ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 3. edit the 5th lines of `zshrc` to the value of `$USER`
-4. ​
+4. configure
 ```
 $ cp zshrc ~/.zshrc
 ```
@@ -50,9 +50,9 @@ $ cp zshrc ~/.zshrc
 - `z` `autojump like` jump to each document
 - `alias` for `tmux`, `git`
 
-## configure for  `tmux`
+## config for  `tmux`
 1. install tmux
-2. ​
+2. configure
 ```
 $ cp tmux.conf ~/.tmux.conf
 ```
