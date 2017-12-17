@@ -10,9 +10,9 @@ Les1ie's dotfiles
 - [ ] `NewLinux.sh` for new installed linux server(drop out)
 
 
-## config for `Vundle.vim`
+## config for `vim`
 1. install vim
-2. ​
+2. install vundle
 ```
 $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
