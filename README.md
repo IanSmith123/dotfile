@@ -7,21 +7,22 @@ Les1ie's dotfiles
 - [x] `zshrc` oh-my-zsh config, path`~/.zshrc`
 - [x] `tmux.conf` tmux config, path`~/.tmux.conf` 
 - [ ] `env-ng.sh` for new installed linux server
-- [ ] `NewLinux.sh` for new installed linux server(drop out)
+- [ ] `NewLinux.sh` for new installed linux server(Deprecated)
 
 
 ## config for `vim`
 1. install vim
 2. install vundle
-```
+```bash
 $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 3. configure 
-```
+```bash
 $ cp vimrc ~/.vimrc
+$ vim -c 'PluginInstall' -c 'qa!'
 ```
-4. launch vim, `:PluginInstall`
-5. functions
+4. functions
+
 - `autoheader` auto add comment header about author when user create new file like `.py .cpp .c and etc`
 - `Taglist`
 - `NerdTree` 
@@ -35,12 +36,12 @@ $ cp vimrc ~/.vimrc
 ## config for  `oh-my-zsh`
 1. install zsh, figlet(show banner)
 2. install `oh-my-zsh` script
-```
+```bash
 $ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 3. edit the 5th lines of `zshrc` to the value of `$USER`
 4. configure
-```
+```bash
 $ cp zshrc ~/.zshrc
 ```
 5. functions
@@ -53,7 +54,7 @@ $ cp zshrc ~/.zshrc
 ## config for  `tmux`
 1. install tmux
 2. configure
-```
+```bash
 $ cp tmux.conf ~/.tmux.conf
 ```
 3. functions
