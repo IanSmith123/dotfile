@@ -76,7 +76,7 @@ Plugin 'L9'
 "Plugin 'rstacruz/sparkup', {'rtp':'vim/'}
 "Plugin 'ascenator/L9', {'rtp':'newL9'}
 
-"Plugin 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'ervandew/supertab'
 "Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'scrooloose/nerdtree'

@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 #
-  export ZSH=/home/ubuntu/.oh-my-zsh
+  export ZSH=HOMEDIR/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -52,7 +52,7 @@ DISABLE_AUTO_UPDATE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git chucknorris)
-plugins=(zsh-256colors tmux git z sudo docker extract pip)
+plugins=(zsh-256colors tmux git z sudo docker extract pip docker-compose)
 source $ZSH/oh-my-zsh.sh
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -82,6 +82,6 @@ export LANG=en_US.UTF-8
 TZ='Asia/Shanghai'; export TZ
 alias cls='clear'
 alias pc='proxychains4 -q'
-figlet    M r , I a n . 
+figlet    M r , R o b o t . 
 last -5
 who

@@ -1,5 +1,5 @@
 ## about 
-Les1ie's dotfiles
+Les1ie's dotfiles :)
 
 
 ## dot files 
@@ -20,13 +20,14 @@ $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```bash
 $ cp vimrc ~/.vimrc
 $ vim -c 'PluginInstall' -c 'qa!'
+$ test -d ~/.vim/color || mkdir ~/.vim/color && cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/color/
 ```
 4. functions
 
 - `autoheader` auto add comment header about author when user create new file like `.py .cpp .c and etc`
 - `Taglist`
 - `NerdTree` 
-- solarized color scheme
+- **solarized** color scheme (I think this is color scheme for human)
 - `vim airline`
 - auto close bracket and rainbow color bracket
 - `markdown` highlight support
@@ -35,23 +36,25 @@ $ vim -c 'PluginInstall' -c 'qa!'
 
 ## config for  `oh-my-zsh`
 1. install zsh, figlet(show banner)
-2. install `oh-my-zsh` script
+2. install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) script
 ```bash
 $ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
-3. edit the 5th lines of `zshrc` to the value of `$USER`
-4. configure
-```bash
-$ cp zshrc ~/.zshrc
-```
-5. functions
-- show the onlie users and last login users
-- `docker` auto complete container name
-- double click `esc` to add  `sudu`
-- `z` `autojump like` jump to each document
-- `alias` for `tmux`, `git`
+3. configure
 
-## config for  `tmux`
+```bash
+$ sed -i "s@HOMEDIR@$HOME@g" zshrc
+$ cp zshrc ~/.zshrc && . ~/.zshrc
+```
+4. functions
+
+- show the online users and last login users
+- `docker` auto complete container name
+- double click `esc` to add  `sudo`
+- `z` do what`autojump`  do, without additional configure
+- `alias` for `tmux`, `git`, `docker-compose`
+
+## config for `tmux`
 1. install tmux
 2. configure
 ```bash
