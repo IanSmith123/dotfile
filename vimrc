@@ -66,49 +66,47 @@ endif
 
 "for vundle
 set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-"Plugin 'tpope/vim-fugitive'
-Plugin 'L9'
-"Plugin 'git://git.wincent.com/command-t.git'
-"Plugin 'rstacruz/sparkup', {'rtp':'vim/'}
-"Plugin 'ascenator/L9', {'rtp':'newL9'}
 
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'ervandew/supertab'
-"Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-surround'
-"Plugin 'scrooloose/syntastic'
-Plugin 'luochen1990/rainbow'
-Plugin 'vim-scripts/AutoClose'
+call plug#begin('~/.vim/plugged')
+" Plug 'VundleVim/Vundle.vim'
+"Plug 'tpope/vim-fugitive'
+Plug 'vim-scripts/L9'
+"Plug 'git://git.wincent.com/command-t.git'
+"Plug 'rstacruz/sparkup', {'rtp':'vim/'}
+"Plug 'ascenator/L9', {'rtp':'newL9'}
+
+Plug 'altercation/vim-colors-solarized'
+Plug 'ervandew/supertab'
+"Plug 'kien/rainbow_parentheses.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-surround'
+"Plug 'scrooloose/syntastic'
+Plug 'luochen1990/rainbow'
+Plug 'vim-scripts/AutoClose'
 "for vim markdown
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 "for snipmate
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-"Plugin 'Solarized'
-Plugin 'altercation/vim-colors-solarized'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+"Plug 'Solarized'
+Plug 'altercation/vim-colors-solarized'
 "vim chat of Tux
-"Plugin 'wsdjeg/vim-chat'
-Plugin 'Taglist.vim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'IanSmith123/autoHEADER'
-Plugin 'johngrib/vim-game-code-break'
+"Plug 'wsdjeg/vim-chat'
+Plug 'vim-scripts/taglist.vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'IanSmith123/autoHEADER'
+Plug 'johngrib/vim-game-code-break'
 "vim golang"
-"Plugin 'fatih/vim-go'
+"Plug 'fatih/vim-go'
 "vim git"
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
-call vundle#end() 
-filetype plugin indent on
+call plug#end() 
 
 "set by ian
 
