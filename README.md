@@ -12,18 +12,36 @@ Les1ie's dotfiles :)
 
 ## config for `vim`
 1. install vim
-2. install vundle
+2. install [vim-plug](https://github.com/junegunn/vim-plug)
+Linux:
+
 ```bash
-$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+windows:
+
+```powershell
+md ~\vimfiles\autoload
+$uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+(New-Object Net.WebClient).DownloadFile(
+  $uri,
+  $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath(
+    "~\vimfiles\autoload\plug.vim"
+  )
+)
+```
+
+
+
 3. configure 
+
 ```bash
 $ cp vimrc ~/.vimrc
-$ vim -c 'PluginInstall' -c 'qa!'
-$ test -d ~/.vim/color || mkdir ~/.vim/color && cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/color/
+$ vim -c 'PlugInstall' -c 'qa!'
 ```
 4. functions
 
+- enjoy **vim-plug** not **Vundle** , because vim-plug use shallow clone, and parallel download which much faster than Vundle
 - `autoheader` auto add comment header about author when user create new file like `.py .cpp .c and etc`
 - `Taglist`
 - `NerdTree` 
