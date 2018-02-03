@@ -85,3 +85,7 @@ alias pc='proxychains4 -q'
 figlet    M r , R o b o t . 
 last -5
 who
+# for generate gitignore file
+# usage: gi cmake,c++
+# gi python,pycharm
+function gi() { curl -L -s https://www.gitignore.io/api/\$@ ;}
