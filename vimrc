@@ -68,16 +68,22 @@ endif
 set nocompatible
 
 call plug#begin('~/.vim/plugged')
+" Plug 'VundleVim/Vundle.vim'
+"Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/L9'
+"Plug 'git://git.wincent.com/command-t.git'
+"Plug 'rstacruz/sparkup', {'rtp':'vim/'}
+"Plug 'ascenator/L9', {'rtp':'newL9'}
+
 Plug 'altercation/vim-colors-solarized'
 Plug 'ervandew/supertab'
+"Plug 'kien/rainbow_parentheses.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-"vim airline 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
 Plug 'tpope/vim-surround'
+"Plug 'scrooloose/syntastic'
 Plug 'luochen1990/rainbow'
 Plug 'vim-scripts/AutoClose'
 "for vim markdown
@@ -87,17 +93,19 @@ Plug 'plasticboy/vim-markdown'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
+"vim chat of Tux
+"Plug 'wsdjeg/vim-chat'
 Plug 'vim-scripts/taglist.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'IanSmith123/autoHEADER'
 Plug 'johngrib/vim-game-code-break'
-
 "vim golang"
 "Plug 'fatih/vim-go'
-"
 "vim git"
 Plug 'tpope/vim-fugitive'
 
+"wakatime"
+Plug 'wakatime/vim-wakatime'
 call plug#end() 
 
 "set by ian
@@ -134,20 +142,7 @@ let g:rainbow_active = 1
 
 "for solarized"
 let g:solarized_italic=0
-"
-function! ToggleBackground()
-	if (w:solarized_style=="dark")
-		let w:solarized_style="light"
-	colorscheme solarized
-else
-	let w:solarized_style="dark"
-	colorscheme solarized
-endif
-endfunction
-command! Togbg call ToggleBackground()
-nmap <F5> :call ToggleBackground()<CR>
-imap <F5> <ESC>:call ToggleBackground()<CR>a
-vnoremap <F5> <ESC>:call ToggleBackground()<CR>
+call togglebg#map("<F5>")
 
 """"""""""""""""""""""""""""""""
 "for syntastic
