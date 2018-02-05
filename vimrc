@@ -151,6 +151,12 @@ let g:rainbow_active = 1
 let g:solarized_italic=0
 call togglebg#map("<F5>")
 
+if has('gui_running')
+	set background=light
+else
+	set background=dark
+endif
+
 """"""""""""""""""""""""""""""""
 "for syntastic
 ""set statusline+=%#warningmsg#
