@@ -1,6 +1,9 @@
 #!/bin/bash
-if [$# -eq 0];then
+if [$#==1];then
 echo "update,curl,wget,vim,zsh,tmux,docker"
+exit
+fi
+
 for cmd in $@
 do
 case $cmd in 
@@ -27,6 +30,10 @@ vim -c 'PlugInstall' -c 'qa!'
 echo "oh-my-zsh"
 sudo apt install zsh figlet -y
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+ 
+curl -fsSL https://raw.githubusercontent.com/IanSmith123/dotfile/master/vimrc -o /tmp/zshrc
+sed -i "s@HOMEDIR@$HOME@g" /tmp/zshrc
+mv /tmp/zshrc ~/.zshrc
 ;;
 
 "tmux")
@@ -40,6 +47,8 @@ echo "tmux done"
 curl -fsSL https://get.docker.com -o /tmp/docker.sh
 sudo bash /tmp/docker.sh
 sudo usermod -aG docker $USER
+;;
 esac
 
 done
+echo "All done"
