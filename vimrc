@@ -112,7 +112,7 @@ Plug 'johngrib/vim-game-code-break'
 Plug 'tpope/vim-fugitive'
 
 "wakatime"
-Plug 'wakatime/vim-wakatime'
+"Plug 'wakatime/vim-wakatime'
 call plug#end() 
 
 "set by ian
@@ -122,7 +122,7 @@ imap jk <RIGHT>
 set nu
 set ci
 set fencs=utf-8,gbk,gb2312,cp936
-colo solarized
+"colo solarized
 set ts=4
 set softtabstop=4
 set shiftwidth=4
