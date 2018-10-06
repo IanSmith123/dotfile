@@ -15,11 +15,30 @@ runtime! debian.vim
 "script is for My linux mint, cinnamon 18, and the version is vim 7.4,
 "but in windows, version is vim8.0, compare with the vimrc in windowns,
 "I find this difference, and add it to here.
-if has('win32')
+
+"get platform
+let g:iswindows = 0
+let g:islinux=0
+
+if (has("win32")||has("win64"))
+    let g:iswindows = 1
+else
+    let g:islinux = 1
+endif
+
+let g:isGUI = 0
+if has("gui_running")
+    let g:isGUI = 1
+else
+    let g:isGUI = 0
+endif
+
+if(g:iswindows)
 	source $VIMRUNTIME/vimrc_example.vim
 	source $VIMRUNTIME/mswin.vim
 	behave mswin
 endif
+
 " Uncomment the next line to make Vim more Vi-compatible
 " NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
 " options, so any other options should be set AFTER setting 'compatible'.
@@ -68,7 +87,8 @@ endif
 set nocompatible
 
 " auto-install vim-plug
-if empty(glob('~/.vim/autoload/plug.vim'))
+
+if (g:islinux && empty(glob('~/.vim/autoload/plug.vim')))
 	silent !curl -fLso ~/.vim/autoload/plug.vim --create-dirs
 				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
@@ -102,7 +122,7 @@ Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 "vim chat of Tux
 "Plug 'wsdjeg/vim-chat'
-Plug 'vim-scripts/taglist.vim'
+"Plug 'vim-scripts/taglist.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'IanSmith123/autoHEADER'
 Plug 'johngrib/vim-game-code-break'
@@ -122,7 +142,7 @@ imap jk <RIGHT>
 set nu
 set ci
 set fencs=utf-8,gbk,gb2312,cp936
-"colo solarized
+
 set ts=4
 set softtabstop=4
 set shiftwidth=4
@@ -130,14 +150,12 @@ set guifont=Ubuntu\ mono:h14
 set autoread
 set nobackup
 "use \n not \r\n
-set fileformat=unix
+
+"set fileformat=unix
 set cursorline
 "set ai
 "start roll the screen when it's 7th line"
 set so=7
-
-
-
 
 "for nerdtree
 map NE :NERDTreeToggle<cr>
@@ -148,10 +166,12 @@ autocmd bufenter * if(winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTa
 let g:rainbow_active = 1
 
 "for solarized"
+colo solarized
+
 let g:solarized_italic=0
 call togglebg#map("<F5>")
 
-if has('gui_running')
+if (g:isGUI)
 	set background=light
 else
 	set background=dark
@@ -194,12 +214,12 @@ let g:airline_theme='bubblegum'
 
 """"""""""""""""""""""""""""""""""""""
 " for taglist.vim"
-let Tlist_Inc_Winwidth=0
-let Tlis_File_Fold_Auto_Close=1
-let Tlist_Show_One_File=1
-let Tlist_Exit_OnlyWindow=1
-let Tlist_GainFocus_On_ToggleOpen=1
-map TG :TlistToggle<CR>
+"let Tlist_Inc_Winwidth=0
+""let Tlis_File_Fold_Auto_Close=1
+""let Tlist_Show_One_File=1
+""let Tlist_Exit_OnlyWindow=1
+""let Tlist_GainFocus_On_ToggleOpen=1
+""map TG :TlistToggle<CR>
 
 """""""""""for win gui"
 if has("gui_running")
