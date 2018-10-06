@@ -151,7 +151,7 @@ set autoread
 set nobackup
 "use \n not \r\n
 
-"set fileformat=unix
+set fileformat=unix
 set cursorline
 "set ai
 "start roll the screen when it's 7th line"
