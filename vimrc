@@ -97,39 +97,52 @@ endif
 call plug#begin('~/.vim/plugged')
 " Plug 'VundleVim/Vundle.vim'
 "Plug 'tpope/vim-fugitive'
-Plug 'vim-scripts/L9'
+"Plug 'vim-scripts/L9'
 "Plug 'git://git.wincent.com/command-t.git'
 "Plug 'rstacruz/sparkup', {'rtp':'vim/'}
 "Plug 'ascenator/L9', {'rtp':'newL9'}
 
 Plug 'altercation/vim-colors-solarized'
+
 Plug 'ervandew/supertab'
+
 "Plug 'kien/rainbow_parentheses.vim'
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
+
+" air line
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-surround'
+
+"Plug 'tpope/vim-surround'
+
 "Plug 'scrooloose/syntastic'
+
+"rainbow parentheses
 Plug 'luochen1990/rainbow'
+" auto close parentheses
 Plug 'vim-scripts/AutoClose'
+
 "for vim markdown
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+
 "for snipmate
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
+"Plug 'MarcWeber/vim-addon-mw-utils'
+"Plug 'tomtom/tlib_vim'
+"Plug 'garbas/vim-snipmate'
 "vim chat of Tux
 "Plug 'wsdjeg/vim-chat'
 "Plug 'vim-scripts/taglist.vim'
-Plug 'terryma/vim-multiple-cursors'
+"Plug 'terryma/vim-multiple-cursors'
+
 Plug 'IanSmith123/autoHEADER'
+
 Plug 'johngrib/vim-game-code-break'
 "vim golang"
 "Plug 'fatih/vim-go'
 "vim git"
-Plug 'tpope/vim-fugitive'
+"Plug 'tpope/vim-fugitive'
 
 "wakatime"
 "Plug 'wakatime/vim-wakatime'
