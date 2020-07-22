@@ -179,16 +179,12 @@ autocmd bufenter * if(winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTa
 let g:rainbow_active = 1
 
 "for solarized"
-"colo solarized
-
-"let g:solarized_italic=0
-"call togglebg#map("<F5>")
-
-"if (g:isGUI)
-"	set background=light
-"else
-"	set background=dark
-"endif
+if (g:isGUI)
+	colo solarized
+	let g:solarized_italic=0
+	call togglebg#map("<F5>")
+	set background=light
+endif
 
 """"""""""""""""""""""""""""""""
 "for syntastic
