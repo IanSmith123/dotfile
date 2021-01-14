@@ -7,7 +7,6 @@ Les1ie's dotfiles :)
 - [x] `zshrc` oh-my-zsh config, path`~/.zshrc`
 - [x] `tmux.conf` tmux config, path`~/.tmux.conf` 
 - [ ] `env-ng.sh` for new installed linux server
-- [ ] `NewLinux.sh` for new installed linux server(Deprecated)
 
 
 ## config for `vim`
