@@ -90,7 +90,7 @@ set nocompatible
 
 if (g:islinux && empty(glob('~/.vim/autoload/plug.vim')))
 	silent !curl -fLso ~/.vim/autoload/plug.vim --create-dirs
-				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+				\ https://cdn.jsdelivr.net/gh/junegunn/vim-plug@0.11.0/plug.vim
 	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
